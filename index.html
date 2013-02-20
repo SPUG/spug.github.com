@@ -1,137 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Silesian PHP User Group</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="SPUG">
+---
+title: Silesian PHP User Group
+layout: default
+---
 
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="./css/spug.css" rel="stylesheet">
+<h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+{{ site.posts.first.content }}
 
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<hr />
 
-        <link rel="shortcut icon" href="./favicon.png">
-    </head>
+<h3>Wszystkie wiadomości:</h3>
 
-    <body>
-
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">SPUG</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="/">Spotkanie</a></li>
-                            <li><a href="contact.html">Kontakt</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-
-            <div class="hero-unit">
-                <h1>Witaj w SPUGu!</h1>
-                <p>Grupie zrzeszającej śląskich użytkowników PHP.</p>
-            </div>
-
-            <div class="row">
-                <div class="span6 offset1">
-                    <h2>20 września, czwartek</h2>
-                    <p>Drugie spotkanie <b>Silesian PHP User Group</b> odbędzie się 20 września 2012 roku o godzinie 18:00. Dzięki współpracy z gliwickim IAESTE spotkanie odędzie się w Sali Bankietowej Centrum Kultury Studenckiej "Mrowisko" - w Gliwicach przy ulicy Pszczyńskiej 85.</p>
-                    <p><a class="btn" href="https://maps.google.com/maps/ms?msid=208903925021635275158.0004c288392c6628586ca&amp;msa=0&amp;ll=50.285334,18.677782&amp;spn=0.006293,0.016512" target="_blank">Zobacz mapę &raquo;</a> <a class="btn" href="https://www.facebook.com/events/369987339744187/" target="_blank">Zobacz wydarzenie na FB &raquo;</a></p>
-                    <h2>Zaplanowane zostały 4 prezentacje:</h2>
-                    <ul>
-                        <li>
-                            <p><b><a href="http://www.slideshare.net/krzysztof-parjaszewski/mapreduce-w-mongodb">MapReduce w MongoDB</a></b> - <a href="https://github.com/krzysztofp">Krzysztof Parjaszewski</a></p>
-                            <p>Na początku przedstawione zostanie wprowadzenie do nierelacyjnych baz danych, w tym do samej bazy MongoDB.
-                                W następnym kroku opisane zostaną zasady działania Map Reduce, jego wady i zalety. W ostatnim kroku, dla ogólnodostępnych,
-                                dużych zbiorów danych pokazane zostanie zastosowanie Map Reduce w akcji.</p>
-                            <p>Kolejne przykłady i ich omówienie zostaną przedstawione na najbliższych warsztatach technicznych SPUG, na które już dzisiaj zapraszamy.</p>
-                            <p>
-                                <object type="application/x-shockwave-flash" style="width:640px; height:360px;"
-                                        data="http://www.youtube.com/v/4KIAsxTkoeQ?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1">
-                                    <param name="movie"
-                                           value="http://www.youtube.com/v/4KIAsxTkoeQ?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1" />
-                                    <param name="allowFullScreen" value="true" />
-                                    <param name="allowscriptaccess" value="always" />
-                                </object>
-                            </p>
-                        </li>
-                        <li>
-                            <p><b>Jak pisać serwisy widoczne dla wszystkich</b> - Bartek Lenarth</p>
-                            <p>Opowiem co to jest screenreader, jak działa i jakie
-                                mechanizmy udostępnia, wskazując jak proste elementy pomagają w
-                                uczynieniu strony dostępniejszą. Wskażę najczęściej spotykane
-                                problemy w dostępności oraz powiem jak proste jest ich
-                                usunięcie.</p>
-
-                            <p>Opowiem w końcu dlaczego dostępność jest tak istotna i
-                                dlaczego warto przy projektowaniu myśleć o tej kolejnej
-                                właściwości strony.</p>
-                            <p>
-
-                            <p>W razie pytań związanych z tą tematyką zapraszam do kontaktu ze mną. <br/>Telefon: +48 606 277 027, Email: lbartek (małpa) gmail (kropka) com</p>
-                                <object type="application/x-shockwave-flash" style="width:640px; height:360px;"
-                                        data="http://www.youtube.com/v/jYmJPEPrdrE?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1">
-                                    <param name="movie" value="http://www.youtube.com/v/jYmJPEPrdrE?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1" />
-                                    <param name="allowFullScreen" value="true" />
-                                    <param name="allowscriptaccess" value="always" />
-                                </object>
-                            </p>
-                        </li>
-                        <li>
-                            <p><b><a href="http://michal-pipa.github.com/talks/2012-09-20-php54/">PHP 5.4</a></b> - <a href="https://github.com/michal-pipa">Michał Pipa</a></p>
-                            <p>Opowiem o nowościach w PHP 5.4. Zaprezentuję nie tylko nowe
-                                elementy samego języka PHP, ale również nowe narzędzia i
-                                procesy wprowadzone do rozwoju projektu PHP.</p>
-                            <p>
-                                <object type="application/x-shockwave-flash" style="width:640px; height:360px;" data="http://www.youtube.com/v/muczXhUb3nQ?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1">
-                                    <param name="movie" value="http://www.youtube.com/v/muczXhUb3nQ?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1" />
-                                    <param name="allowFullScreen" value="true" />
-                                    <param name="allowscriptaccess" value="always" />
-                                </object>
-                            </p>
-                        </li>
-                        <li>
-                            <p><b><a href="http://www.slideshare.net/iteo_com_pl/singapore-finecity">Singapore Fine City</a></b> - <a href="http://iteo.com.pl/">Jerzy Kufel</a></p>
-                            <p>Singapore Fine City - czyli jak wygląda środowisko startupowe, jak szybko można znaleźć pracę i jak jej szukać?
-                                Odpowiem na pytanie czy Singapore jest fajnym miastem do życia i co warto zobaczyć.</p>
-                            <p>
-                                <object type="application/x-shockwave-flash" style="width:640px; height:360px;" data="http://www.youtube.com/v/0AHMEWsbVQY?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1">
-                                    <param name="movie" value="http://www.youtube.com/v/0AHMEWsbVQY?rel=0&amp;showsearch=0&amp;version=3&amp;fs=1" />
-                                    <param name="allowFullScreen" value="true" />
-                                    <param name="allowscriptaccess" value="always" />
-                                </object>
-                            </p>
-                        </li>
-                    </ul>
-                    <h2>A po prezentacjach...</h2>
-                    <p>zapraszamy do integrowania się i wspólnej dyskusji.</p>
-                </div>
-            </div>
-
-            <hr/>
-
-            <footer>
-                <p></p>
-            </footer>
-
-        </div>
-
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-
-    </body>
-</html>
+{% for post in site.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{% endfor %}

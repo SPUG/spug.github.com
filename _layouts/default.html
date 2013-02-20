@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="SPUG">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/css/spug.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="/favicon.png">
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/">SPUG</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="/">Strona główna</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="hero-unit">
+                <h1>Witaj w SPUGu!</h1>
+                <p>Grupie zrzeszającej śląskich użytkowników PHP.</p>
+            </div>
+
+            <div class="row">
+                <div class="span6 offset1">
+                    {{ content }}
+                </div>
+            </div>
+
+            <hr/>
+
+            <footer>
+                <p></p>
+            </footer>
+
+        </div>
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
