@@ -7,3 +7,6 @@ h2, ul {
 .hero-unit {
 	padding-bottom: 20px;
 }
+img {
+    margin: 3px;
+}
